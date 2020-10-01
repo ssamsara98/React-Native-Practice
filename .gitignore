@@ -1,6 +1,6 @@
 # Custom
 # # Expo
-.expo/*
+.expo/
 *.jks
 *.p8
 *.p12
