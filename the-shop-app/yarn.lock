@@ -2283,6 +2283,11 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
+dotenv@^8.0.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -2521,7 +2526,7 @@ expo-keep-awake@~8.3.0:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-8.3.0.tgz#11bb8073dfe453259926855c81d9f35db03a79b9"
   integrity sha512-zrMsvZLHColfSex5Yf6h5vw3mgJiG48FX36+fOXUqq/erCtDkqY2NB7PmhDaj6lWRJ0OuXa90uYXNveXBJyhfA==
 
-expo-linear-gradient@~8.3.0:
+expo-linear-gradient@^8.3.1, expo-linear-gradient@~8.3.0:
   version "8.3.1"
   resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-8.3.1.tgz#5dd3878c0700035d55241a4a453c5e224acc60ff"
   integrity sha512-zlWGua8vm7+af4otaSpJlzu0SYIr0aWbL0qICySCDUEKkqig6MqfuI69NYHC0w9ocWZuh2xyj6Rbfy01UqcVSg==
@@ -4103,6 +4108,11 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.5"
 
+moment@^2.29.0:
+  version "2.29.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.0.tgz#fcbef955844d91deb55438613ddcec56e86a3425"
+  integrity sha512-z6IJ5HXYiuxvFTI6eiQ9dm77uE0gyy1yXNApVHqTcnIKfY9tIwEjlzsZ6u1LQXvVgKeTnv9Xm7NDvJ7lso3MtA==
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -4521,6 +4531,11 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
+prettier@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.2.tgz#3050700dae2e4c8b67c4c3f666cdb8af405e1ce5"
+  integrity sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
+
 pretty-format@^23.6.0:
   version "23.6.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-23.6.0.tgz#5eaac8eeb6b33b987b7fe6097ea6a8a146ab5760"
@@ -4645,6 +4660,13 @@ react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-native-dotenv@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-dotenv/-/react-native-dotenv-2.4.2.tgz#231071a1c3a9c29d96e6221b80d2cef6d9be39b7"
+  integrity sha512-j2ig8RTdv+PQ6JemHzIskqrbjfFpV82Wd5v9cIAEZsw5wto864R4BW7gn8r347SKystdokZbMosdIRyYMXVi1Q==
+  dependencies:
+    dotenv "^8.0.0"
 
 react-native-gesture-handler@~1.7.0:
   version "1.7.0"
@@ -4780,6 +4802,16 @@ readable-stream@^2.0.1, readable-stream@^2.2.2, readable-stream@~2.3.6:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
+
+redux-devtools-extension@^2.13.8:
+  version "2.13.8"
+  resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz#37b982688626e5e4993ff87220c9bbb7cd2d96e1"
+  integrity sha512-8qlpooP2QqPtZHQZRhx3x3OP5skEV1py/zUdMY28WNAocbafxdG2tRD1MWE7sp8obGMNYuLWanhhQ7EQvT1FBg==
+
+redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+  integrity sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw==
 
 redux@^4.0.5:
   version "4.0.5"
