@@ -1,13 +1,16 @@
+import { FIREBASE_DB_URI } from '@env';
+
 import Order from '../../models/order';
 
 export const ADD_ORDER = 'ADD_ORDER';
 export const SET_ORDERS = 'SET_ORDERS';
 
 export const fetchOrders = () => {
-  return async (dispatch) => {
+  return async (dispatch, getState) => {
+    const userId = getState().auth.userId;
     try {
-      // const response = await fetch('https://rn-complete-guide.firebaseio.com/orders/u1.json');
-      const response = await fetch('https://reference-rain-314351.firebaseio.com/the-shop-app/orders/u1.json');
+      // const response = await fetch(`https://ng-prj-test.firebaseio.com/orders/${userId}.json`);
+      const response = await fetch(`${FIREBASE_DB_URI}/orders/${userId}.json`);
 
       if (!response.ok) {
         throw new Error('Something went wrong!');
@@ -29,10 +32,12 @@ export const fetchOrders = () => {
 };
 
 export const addOrder = (cartItems, totalAmount) => {
-  return async (dispatch) => {
+  return async (dispatch, getState) => {
+    const token = getState().auth.token;
+    const userId = getState().auth.userId;
     const date = new Date();
-    // const response = await fetch('https://rn-complete-guide.firebaseio.com/orders/u1.json', {
-    const response = await fetch('https://reference-rain-314351.firebaseio.com/the-shop-app/orders/u1.json', {
+    // const response = await fetch(`https://ng-prj-test.firebaseio.com/orders/${userId}.json?auth=${token}`, {
+    const response = await fetch(`${FIREBASE_DB_URI}/orders/${userId}.json?auth=${token}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

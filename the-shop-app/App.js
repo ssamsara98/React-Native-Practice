@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Provider } from 'react-redux';
 import { AppLoading } from 'expo';
 import * as Font from 'expo-font';
+import { FIREBASE_API_KEY, FIREBASE_DB_URI } from '@env';
 
 import store from './store';
-import ShopNavigator from './navigation/ShopNavigator';
+import AppNavigator from './navigation/AppNavigator';
+import { SafeAreaView } from 'react-native';
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -29,7 +31,7 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      <ShopNavigator />
+      <AppNavigator />
     </Provider>
   );
 }

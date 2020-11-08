@@ -8,7 +8,7 @@ import Card from '../../components/UI/Card';
 import * as cartActions from '../../store/actions/cart';
 import * as ordersActions from '../../store/actions/orders';
 
-const CartScreen = () => {
+const CartScreen = (props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const cartTotalAmount = useSelector((state) => state.cart.totalAmount);
@@ -67,6 +67,10 @@ const CartScreen = () => {
       />
     </View>
   );
+};
+
+export const screenOptions = {
+  headerTitle: 'Your Cart',
 };
 
 const styles = StyleSheet.create({
