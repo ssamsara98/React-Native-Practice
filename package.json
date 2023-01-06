@@ -1,0 +1,20 @@
+{
+  "name": "react-native-practice",
+  "version": "0.0.1",
+  "author": "Sulthon Abdul Malik <sulthon.abdmalik@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": ">=7",
+    "lint-staged": ">=10",
+    "prettier": "^2.8.1"
+  },
+  "repository": "https://github.com/ssamsara98/React-Native-Practice.git",
+  "bugs": "https://github.com/ssamsara98/React-Native-Practice/issues",
+  "lint-staged": {
+    "*.{md,html,css,json,js,jsx,ts,tsx}": "prettier -w"
+  }
+}
